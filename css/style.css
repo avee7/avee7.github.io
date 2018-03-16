@@ -1,66 +1,45 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Typography */
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+h5 {
+  /* line-height: 130%; */
+  line-height: 2.56rem;
+}
+h6 {
+  font-size: 1.25rem;
+}
+
+
+/* Element styles */
+img {
+  max-width: 100%;
+}
+blockquote {
+  color: #272D4E;
+  font-sizE: 1.5rem;
+  /* border-color: #FDB44B; */
+  border-color: #46CDCF;
+}
+a {
+  color: #46CDCF;
+}
+a.white-text:hover {
+  text-decoration: underline;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
 
-p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
 
-.button-collapse {
-  color: #26a69a;
-}
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-/*My styles */
-
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
+/* Helper Classes */
 .m-auto {
   margin: 0 auto;
 }
@@ -89,19 +68,8 @@ body {
   font-weight: 600;
 }
 
-h5 {
-  /* line-height: 130%; */
-  line-height: 2.56rem;
-}
 
-h6 {
-  font-size: 1.25rem;
-}
-
-img {
-  max-width: 100%;
-}
-
+/* Common styles across pages */
 .image-container {
     padding: 2rem;
 }
@@ -110,17 +78,15 @@ img {
   padding: 0;
 }
 
+.sub-banner {
+  background: #46CDCF;
+  color: #fff;
+}
+
 .custom-icon {
   /* color: #005792; */
   color: #46CDCF;
   font-size: 3rem;
-}
-
-blockquote {
-  color: #272D4E;
-  font-sizE: 1.5rem;
-  /* border-color: #FDB44B; */
-  border-color: #46CDCF;
 }
 
 .desc {
@@ -145,6 +111,23 @@ blockquote {
   font-style: italic;
 }
 
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+    width: 100%;
+  }
+
+
+/* Index page (portfolio page) */
 #index-banner {
   display: flex;
   justify-content: center;
@@ -155,75 +138,31 @@ blockquote {
   color: rgba(255,255,255,.9);
 }
 
-#about-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: #48466D;
-  color: rgba(255,255,255,.9);
-  padding: 6rem 0;
-}
-
-#contact-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: #48466D;
-  color: rgba(255,255,255,.9);
-  padding: 6rem 0;
-  height: calc(100vh - 258px);
-}
-
-#contact-banner .section {
-  width: 100%;
-}
-
-#contact-banner .section>.row {
-  display: flex;
-  flex-direction: column;
-  /* width: 40%;
-  margin: 0 auto; */
-}
-
-#contact-banner .section>.row>.col {
-  margin: 0 auto;
-}
-
-#contact-banner img {
-  max-width: 30px;
-  vertical-align: sub;
-}
-
-#contact-banner h5 {
-  display: inline-block;
-  margin-left: 0.8rem;
-}
-
 #index-banner .strap-line {
   margin-left: auto;
   margin-right: auto;
   float: none;
 }
 
-.sub-banner {
-  background: #46CDCF;
-  color: #fff;
-}
-
 #isoshealth-intro {
   padding: 8rem 0;
 }
 
-@media screen and (min-width: 600px) {
-  .card {
-    min-height: 300px;
-  }
-}
-
 #isoshealth-intro .section {
   color: #fff;
+}
+
+.isoshealth-main-img {
+  background: #fafafa;
+}
+
+.my-role-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.approach {
+  background: #fafafa;
 }
 
 .process ul, .process ul li {
@@ -236,36 +175,22 @@ blockquote {
   background-color: #fafafa;
 }
 
-.approach {
-  background: #fafafa;
-}
-
-.isoshealth-main-img {
-  background: #fafafa;
-}
-
 .interactions {
   background: #fafafa;
   /* color: white; */
   padding-top: 2rem;
 }
 
-.skills {
-  background: #fafafa;
-  margin-top: 2rem;
-}
 
-footer.page-footer {
-  background: #3D84A8;
-  /* margin-top: 2rem; */
-}
-
-/* .page-footer .footer-copyright {
+/* About page */
+#about-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background: #48466D;
-} */
-
-a {
-  color: #46CDCF;
+  color: rgba(255,255,255,.9);
+  padding: 6rem 0;
 }
 
 .my-journey dl {
@@ -345,16 +270,52 @@ a {
   padding-right: 2rem;
 }
 
-@media only screen and (max-width : 600px) {
-  .my-journey>.row {
-    padding-left: 2rem;
-  }
+.skills {
+  background: #fafafa;
+  margin-top: 2rem;
 }
 
-@media only screen and (max-width : 600px) {
-  .my-journey .col.m8:before {
-    height: 150%;
-  }
+
+/* Contact Page */
+#contact-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #48466D;
+  color: rgba(255,255,255,.9);
+  padding: 6rem 0;
+  height: calc(100vh - 258px);
+}
+
+#contact-banner .section {
+  width: 100%;
+}
+
+#contact-banner .section>.row {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-banner .section>.row>.col {
+  margin: 0 auto;
+}
+
+#contact-banner img {
+  max-width: 30px;
+  vertical-align: sub;
+}
+
+#contact-banner h5 {
+  display: inline-block;
+  margin-left: 0.8rem;
+}
+
+
+/* footer */
+footer.page-footer {
+  margin: 0;
+  background: #3D84A8;
 }
 
 .site-map ul {
@@ -366,6 +327,75 @@ a {
   padding-left: 1rem;
 }
 
-a.white-text:hover {
-  text-decoration: underline;
+
+/* Media queries */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    min-height: 250px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    min-height: 310px;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner {
+    height: auto;
+    padding: 6rem 0;
+  }
+
+  #index-banner .section {
+    top: 0;
+  }
+
+  #isoshealth-intro {
+    padding: 6rem 0;
+  }
+
+  .pt-6 {
+    padding-top: 3rem;
+  }
+
+  .pb-6 {
+    padding-bottom: 3rem;
+  }
+
+  .pt-3 {
+    padding-top: 1.5rem;
+  }
+
+  .pb-3 {
+    padding-bottom: 1.5rem;
+  }
+
+  .my-journey>.row {
+    padding-left: 2rem;
+  }
+
+  .my-journey .col.m8:before {
+    height: 150%;
+  }
+
+  .process ul {
+    padding-left: 1rem;
+  }
 }
