@@ -288,17 +288,9 @@ nav .brand-logo {
   height: calc(100vh - 258px);
 }
 
-#contact-banner .section {
-  width: 100%;
-}
-
-#contact-banner .section>.row {
+#contact-banner .row {
   display: flex;
   flex-direction: column;
-}
-
-#contact-banner .section>.row>.col {
-  margin: 0 auto;
 }
 
 #contact-banner img {
