@@ -406,3 +406,12 @@ footer.page-footer {
     padding-left: 1rem;
   }
 }
+
+.app-parallax-container {
+    background-image: url('../images/code.png');
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
