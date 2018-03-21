@@ -30,9 +30,9 @@ blockquote {
 a {
   color: #46CDCF;
 }
-a.white-text:hover {
+/* a.white-text:hover {
   text-decoration: underline;
-}
+} */
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -177,8 +177,19 @@ nav .brand-logo {
 
 .interactions {
   background: #fafafa;
-  /* color: white; */
   padding-top: 2rem;
+}
+
+.portfolio-list .card-image {
+  background: #46CDCF;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-list .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #46CDCF;
 }
 
 
@@ -328,13 +339,13 @@ footer.page-footer {
 }
 
 @media screen and (min-width: 600px) {
-  .card {
+  .my-role-row .card {
     min-height: 250px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .card {
+  .my-role-row .card {
     min-height: 310px;
   }
 }
