@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #444;
 }
 
 
@@ -161,14 +162,20 @@ nav .brand-logo {
   flex-wrap: wrap;
 }
 
+.my-role-row .card .card-image {
+  background: #fafafa;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .approach {
   background: #fafafa;
 }
 
 .process ul, .process ul li {
   list-style-type: disc;
-  font-size: 1.125rem;
-  line-height: 1.875rem;
 }
 
 .process.image-container {
