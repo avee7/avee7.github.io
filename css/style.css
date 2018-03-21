@@ -97,7 +97,8 @@ nav .brand-logo {
 }
 
 .img-text {
-  font-size: 1rem;
+  font-size: 0.85rem;
+  color: #979797;
 }
 
 .help-text {
@@ -174,17 +175,13 @@ nav .brand-logo {
   background: #fafafa;
 }
 
-.process ul, .process ul li {
-  list-style-type: disc;
-}
-
 .process.image-container {
   background-color: #fafafa;
 }
 
 .interactions {
   background: #fafafa;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 
 .portfolio-list .card-image {
