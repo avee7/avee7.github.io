@@ -6,12 +6,14 @@ body {
 
 /* Typography */
 p {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.25rem;
+  /* line-height: 2.5rem; */
+
+  line-height: 1.5;
 }
-h5 {
-  /* line-height: 130%; */
-  line-height: 2.56rem;
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+  /* line-height: 2.56rem; */
 }
 h6 {
   font-size: 1.25rem;
@@ -24,7 +26,7 @@ img {
 }
 blockquote {
   color: #272D4E;
-  font-sizE: 1.5rem;
+  font-size: 1.25rem;
   /* border-color: #FDB44B; */
   border-color: #46CDCF;
 }
@@ -145,10 +147,10 @@ nav .brand-logo {
   margin-right: auto;
   float: none;
 }
-
+/*
 #isoshealth-intro {
   padding: 8rem 0;
-}
+} */
 
 #isoshealth-intro .section {
   color: #fff;
@@ -163,20 +165,40 @@ nav .brand-logo {
   flex-wrap: wrap;
 }
 
+.my-role-row .card {
+  /* margin: 0; */
+}
+
 .my-role-row .card .card-image {
-  background: #fafafa;
+  /* background: #fafafa; */
   padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.approach {
+.my-role-row .card-image:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8rem;
+  top: -3rem;
+  left: 50%;
+  margin-left: -4rem;
+  height: 8rem;
+  border-radius: 100px;
+  background: rgba(70,205,207,0.2);
+}
+
+.context {
   background: #fafafa;
 }
 
 .process.image-container {
   background-color: #fafafa;
+  margin-bottom: 20px;
 }
 
 .interactions {
@@ -184,12 +206,21 @@ nav .brand-logo {
   /* padding-top: 2rem; */
 }
 
-.portfolio-list .card-image {
+.portfolio-list .card.row {
   background: #46CDCF;
-  padding: 2rem;
+  align-items: center;
+  display: flex;
+}
+
+.portfolio-list .card.row.airline-project {
+  background: #3D84A8;
+}
+.portfolio-list .card-stacked {
+  background: #fff;
+  /* padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .portfolio-list .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
@@ -374,9 +405,9 @@ footer.page-footer {
     top: 0;
   }
 
-  #isoshealth-intro {
+  /* #isoshealth-intro {
     padding: 6rem 0;
-  }
+  } */
 
   .pt-6 {
     padding-top: 3rem;
@@ -414,4 +445,30 @@ footer.page-footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.airline-project .card-image {
+  color: #fff;
+  text-align: center;
+}
+
+#airline-neutral-intro {
+  background: #48466D;
+}
+
+.collection .collection-item {
+  border-left: 5px solid #46CDCF;
+}
+
+.image-container.role, .image-container.airline-process {
+  background: #fafafa;
+}
+
+.airline.process ul {
+  list-style-type: disc;
+}
+
+.airline.process ul li {
+  list-style-type: disc;
+  font-size: 1.25rem;
 }
