@@ -457,10 +457,16 @@ footer.page-footer {
   background: #48466D;
 }
 
+#airline-neutral-intro .header {
+  margin-bottom: 0.2rem;
+}
+
 
 #airline-neutral-intro .help-text {
   color: #fff;
 }
+
+
 
 .collection .collection-item {
   border-left: 5px solid #46CDCF;
