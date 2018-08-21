@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #444;
 }
 
@@ -13,6 +13,7 @@ p {
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
+  font-weight: 500;
   /* line-height: 2.56rem; */
 }
 h6 {
@@ -456,8 +457,14 @@ footer.page-footer {
   background: #48466D;
 }
 
+
+#airline-neutral-intro .help-text {
+  color: #fff;
+}
+
 .collection .collection-item {
   border-left: 5px solid #46CDCF;
+  padding: 20px;
 }
 
 .image-container.role, .image-container.airline-process {
