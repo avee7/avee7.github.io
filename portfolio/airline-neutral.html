@@ -101,10 +101,11 @@ The app was to be redesigned for all the platforms, viz., mobile web, iOS and An
       <div class='col s12'>
         <h5 class='no-margin'>Pick up a car</h5>
         <p class='light'>
-          Let’s take Audi v18 model for the analogy.
+          Let’s take model name called "Alpha" for the analogy.
         </p>
-        <img src='../images/a8919.jpg' />
-        <p class=' light'>To start, we picked up the mobile web app of the existing product and then later iOS and android apps.
+        <img src='../images/original-car.jpg' />
+        <p class=' light'>To start, we picked up the mobile web app of the existing product
+          and then moved on to iOS and android apps.
         </p>
       </div>
     </div>
@@ -112,16 +113,16 @@ The app was to be redesigned for all the platforms, viz., mobile web, iOS and An
       <div class='col s12'>
         <h5 class='no-margin'>Inconsistent car components</h5>
         <p class=' light'>Imagine a scenario in which each and every car of
-          Audi v18 is different. Each car has its own unique
-          steering wheel, motor, etc. These inconsistencies will lead to unnecessary confusion and delays to the customers.
+          model Alpha is different. Each car has its own unique
+          steering wheel, motor, etc. These inconsistencies may lead to unnecessary confusion and delays. Also, the maintenance would cost a lot.
         </p>
         <p class='light'>Our product had a number of inconsistencies. We jotted down all of them. Few of them were:</p>
         <ul>
           <li>inconsistent use of buttons for primary and secondary action,</li>
           <li>different colour hex values for same colour,</li>
           <li>different colours for links, </li>
-          <li>Inconsistent design for forms</li>
-          <li>Inconsistent alignment issues</li>
+          <li>inconsistent design for forms,</li>
+          <li>inconsistent alignment issues</li>
         </ul>
       </div>
     </div>
@@ -131,10 +132,13 @@ The app was to be redesigned for all the platforms, viz., mobile web, iOS and An
         <p class=' light'>Next step was to fix these inconsistencies.
         </p>
         <p class='light'>
-          We worked to remove redundant and inconsistent UI components. We ensured the styles are clean and unambiguous across mobile web, iOS and android.
-This was an important step to bring all the teams across different platforms on the same page. e.g: styles for primary and secondary action was consistent across all the platforms.
+          We worked to remove redundant and inconsistent UI components. We ensured that the
+          styles are clean and unambiguous across all the platforms. This was an important
+          step to bring all the teams across different platforms on the same page. e.g: styles for
+          primary and secondary action were now consistent across all the platforms.
         </p>
-        <p>So, now, we are sure that all the customers have exactly same Audi v18 cars.</p>
+        <p>If the car mechanic knows the model of the car and is aware of the nature of the model,
+          he/she can confidently fix any issue depending upon his/her learning. </p>
       </div>
     </div>
     <div class='row pt-3'>
@@ -142,9 +146,10 @@ This was an important step to bring all the teams across different platforms on 
         <h5 class='no-margin'>Extracting out car components </h5>
         <p class=' light'>The car needs to be disintegrated into its sub components - brakes, window, steering wheel, etc.
         </p>
+        <img src='../images/components.jpg' />
         <p>After extraction of all the car components, a skeleton or the wireframe of the car is left.
         </p>
-        <img src='../images/maxresdefault.jpg' />
+        <img src='../images/structure-car.png' />
         <p class='light'>
           Our task was to breakdown the product into components in SASS code.
         Since we had a huge amount of legacy code, we carried a hybrid approach of atomic
@@ -170,23 +175,26 @@ This was an important step to bring all the teams across different platforms on 
         <div class='col s12'>
           <h5 class='no-margin'>Building a new car model</h5>
           <p class=' light'>The structure of the car can now be used to build up a
-            new car with new skin.
+            new model of the same car.
           </p>
           <p class='light'>
-            We gathered the components of the product - repainted according to the new product.
-            The structure of the product and all the UI components remained the same -
-             a new skin of airline  was wrapped around.
+            We gathered the components of the product and added the visual styles of the new product.
+            In technical terms, the base code remained same - only the overrides were added, thus, keeping the code DRY.
+            </p>
+            <div class='row'>
+
+              <div class='col s8 offset-s2'>
+                <img src='../images/maxresdefault2.jpg' />
+              </div>
+
+            </div>
+            <p class='light'>
+            The structure or the layout of all the UI components and the overall product remained the same.
           </p>
         </div>
       </div></div>
 
-      <div class='row'>
 
-        <div class='col s6 offset-s3'>
-          <img src='../images/maxresdefault2.jpg' />
-        </div>
-
-      </div>
 
   </div>
 
@@ -194,10 +202,10 @@ This was an important step to bring all the teams across different platforms on 
     <!-- <div class='section'> -->
       <div class='row pt-3'>
         <div class='col s12'>
-          <h5 class='no-margin'>Here comes our repainted product!</h5>
-          <p class='light '>Put together the components to build a product
+          <h5 class='no-margin'>Here comes the new model!</h5>
+          <p class='light '>After putting together the components, we got our new product.
           </p>
-          <img src='../images/red-audi.jpg' />
+          <img src='../images/new-car.jpg' />
         </div>
       </div>
     <!-- </div> -->
@@ -207,7 +215,7 @@ This was an important step to bring all the teams across different platforms on 
     <div class='container'>
       <div class='row'>
         <div class='col s12 center'>
-          <h4>Product glance</h4>
+          <h4>Product at a glance</h4>
         </div>
       </div>
 
