@@ -411,11 +411,6 @@ a.button-collapse i {
   padding-right: 2rem;
 }
 
-.skills {
-  background: #fafafa;
-  margin-top: 2rem;
-}
-
 /* About page ends*/
 
 
@@ -509,9 +504,9 @@ footer.page-footer {
     padding-left: 2rem;
   }
 
-  .my-journey .col.m8:before {
+  /* .my-journey .col.m8:before {
     height: 150%;
-  }
+  } */
 }
 
 .app-parallax-container {
