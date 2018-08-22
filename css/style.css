@@ -454,7 +454,6 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 600px) {
-
   .pt-6 {
     padding-top: 3rem;
   }
@@ -462,13 +461,14 @@ footer.page-footer {
   .pb-6 {
     padding-bottom: 3rem;
   }
-
   .pt-3 {
     padding-top: 1.5rem;
   }
-
   .pb-3 {
     padding-bottom: 1.5rem;
+  }
+  .pt-2 {
+    padding-top: 1rem;
   }
 
   .my-journey>.row {
@@ -489,35 +489,20 @@ footer.page-footer {
     background-size: cover;
 }
 
-.airline-project .card-image {
-  color: #fff;
-  text-align: center;
-}
 
-#airline-neutral-intro {
-  background: #48466D;
-}
-
-#airline-neutral-intro .header {
-  margin-bottom: 0.2rem;
-}
-
-
+/* Airline project */
 
 .collection .collection-item {
-  border-left: 5px solid #46CDCF;
-  padding: 20px;
+  border-left: 6px solid #d0efb5;
+  padding: 1.5rem;
+  font-size: 1rem;
 }
 
-.image-container.role, .image-container.airline-process {
-  background: #fafafa;
-}
-
-.airline.process ul {
+.airline-process ul {
   list-style-type: disc;
 }
 
-.airline.process ul li {
+.airline-process ul li {
   list-style-type: disc;
   font-size: 1.25rem;
 }
