@@ -51,9 +51,12 @@ blockquote {
 
 a {
   color: #eb7878;
-  text-decoration: underline;
+
 }
 
+a:hover {
+  text-decoration: underline;
+}
 
 /* main nav styles */
 
@@ -109,13 +112,13 @@ nav ul li.active a {
 
 .sub-banner {
   background: #2f3e75;
-  color: #fff;
   padding: 4rem 1rem;
 }
 
 .sub-banner .header {
   font-size: 1.5rem;
   line-height: 1.8;
+  color: #fff;
   text-align: left;
 }
 
@@ -168,11 +171,23 @@ a.button-collapse {
   text-decoration: none;
 }
 
+a.button-collapse i {
+  font-size: 2rem;
+}
+
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
+}
+
+.pagination {
+  background: #e8e8ea;
+}
+
+.pagination .row .col {
+  padding: 2rem;
 }
 
 
@@ -186,6 +201,7 @@ a.button-collapse {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #index-banner .intro-container {
@@ -207,9 +223,9 @@ a.button-collapse {
 }
 
 @media screen and (min-width: 768px) {
-  #index-banner {
+  /* #index-banner {
     width: 100%;
-  }
+  } */
   #index-banner .intro-container {
     max-width: 36rem;
   }
@@ -265,14 +281,6 @@ a.button-collapse {
   flex-wrap: wrap;
 }
 
-.my-role-row .card .card-image {
-  border-top: 4rem solid #d0efb5;
-}
-
-.my-role-row .card .card-content {
-  padding-top: 0.5rem;
-}
-
 .my-role-row .card .card-title {
   margin-bottom: 1rem;
   color: #2f3e75;
@@ -295,9 +303,30 @@ a.button-collapse {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #48466D;
-  color: rgba(255,255,255,.9);
+  background: #d0efb5;
   padding: 6rem 0;
+}
+
+#about-banner .header {
+  color: #2f3e75;
+  width: 100vw;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.sub-banner.journey {
+  padding: 6rem 0;
+}
+
+.sub-banner.journey .header {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  #about-banner .header {
+    width: 50vw;
+    padding: 0;
+  }
 }
 
 .my-journey dl {
@@ -309,7 +338,7 @@ a.button-collapse {
   width: 16px;
   height: 16px;
   display: inline-block;
-  background: #46CDCF;
+  background: #f3e595;
   border-radius: 50px;
   margin: 6px 10px 0 0;
   float: left;
@@ -323,6 +352,11 @@ a.button-collapse {
   left: 7px;
   top: 22px;
   height: 110%;
+}
+
+.my-journey dt,
+.my-journey dd {
+  margin-left: 2rem;
 }
 
 .my-journey dl:first-of-type dt:before {
@@ -366,7 +400,7 @@ a.button-collapse {
   content: '';
   width: 25px;
   height: 25px;
-  background: #48466D;
+  background: #d0efb5;
   border-radius: 50px;
   position: absolute;
   left: -38px;
