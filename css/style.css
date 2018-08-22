@@ -57,9 +57,6 @@ a {
 
 /* main nav styles */
 
-/* nav {
-  background: transparent !important;
-} */
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -113,15 +110,23 @@ nav ul li.active a {
 .sub-banner {
   background: #2f3e75;
   color: #fff;
-  padding: 8rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .sub-banner .header {
   font-size: 1.5rem;
   line-height: 1.8;
+  text-align: left;
 }
 
 @media only screen and (min-width: 601px) {
+  .sub-banner {
+    padding: 8rem 1rem;
+  }
+
+  .sub-banner .header {
+    text-align: center;
+  }
   nav a.button-collapse {
      display: none;
  }
@@ -158,8 +163,9 @@ nav ul li.active a {
   font-style: italic;
 }
 
-.button-collapse {
-  color: #26a69a;
+a.button-collapse {
+  color: #eb7878;
+  text-decoration: none;
 }
 
 .parallax-container {
@@ -168,10 +174,6 @@ nav ul li.active a {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-
-.parallax-container .section {
-    width: 100%;
-  }
 
 
 /* Index page- landing page */
@@ -190,7 +192,8 @@ nav ul li.active a {
   padding: 1rem 2rem;
 }
 
-#index-banner h1 {
+#index-banner h1,
+#index-banner .strap-line {
   color: #444;
 }
 
@@ -379,6 +382,8 @@ nav ul li.active a {
   margin-top: 2rem;
 }
 
+/* About page ends*/
+
 
 /* Contact Page */
 #contact-banner {
@@ -407,6 +412,7 @@ nav ul li.active a {
   margin-left: 0.8rem;
 }
 
+/* Contact Page ends */
 
 /* footer */
 footer.page-footer {
@@ -426,11 +432,6 @@ footer.page-footer {
 
 
 /* Media queries */
-/* @media only screen and (min-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-} */
 
 @media screen and (min-width: 600px) {
   .my-role-row .card {
@@ -453,18 +454,6 @@ footer.page-footer {
 }
 
 @media only screen and (max-width : 600px) {
-  /* #index-banner {
-    height: auto;
-    padding: 6rem 0;
-  }
-
-  #index-banner .section {
-    top: 0;
-  } */
-
-  /* #isoshealth-intro {
-    padding: 6rem 0;
-  } */
 
   .pt-6 {
     padding-top: 3rem;
@@ -489,10 +478,6 @@ footer.page-footer {
   .my-journey .col.m8:before {
     height: 150%;
   }
-
-  /* .process ul {
-    padding-left: 1rem;
-  } */
 }
 
 .app-parallax-container {
@@ -515,11 +500,6 @@ footer.page-footer {
 
 #airline-neutral-intro .header {
   margin-bottom: 0.2rem;
-}
-
-
-#airline-neutral-intro .help-text {
-  color: #fff;
 }
 
 
