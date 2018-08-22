@@ -16,6 +16,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
   font-weight: 500;
+  color: #2f3e75;
 }
 
 h1 {
@@ -43,20 +44,35 @@ img {
 }
 
 blockquote {
-  color: #272D4E;
+  color: #444;
   font-size: 1.25rem;
-  border-color: #46CDCF;
+  border-color: #2f3e75;
 }
 
 a {
-  color: #f76262;
+  color: #eb7878;
+  text-decoration: underline;
 }
 
+
+/* main nav styles */
+
+nav {
+  background: transparent !important;
+}
 nav ul a,
 nav .brand-logo {
   color: #444;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* main nav styles end */
 
 /* Helper Classes */
 .m-auto {
@@ -65,6 +81,10 @@ nav .brand-logo {
 
 .no-margin {
   margin: 0;
+}
+
+.pt-2 {
+  padding-top: 2rem;
 }
 
 .pt-3 {
@@ -89,28 +109,35 @@ nav .brand-logo {
 
 
 /* Common styles across pages */
-.image-container {
-    padding: 2rem;
-}
-
-.image-container.no-pad {
-  padding: 0;
-}
 
 .sub-banner {
-  background: #46CDCF;
+  background: #2f3e75;
   color: #fff;
+  padding: 8rem 1rem;
 }
 
-.custom-icon {
-  /* color: #005792; */
-  color: #46CDCF;
-  font-size: 3rem;
+.sub-banner .header {
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+@media only screen and (min-width: 601px) {
+  nav a.button-collapse {
+     display: none;
+ }
+}
+
+.bg-container {
+  background: #fafafa;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 0.5rem;
 }
 
 .desc {
   font-size: 1rem;
-  /* line-height: 1.667rem; */
   line-height: 1.5rem;
 }
 
@@ -160,7 +187,11 @@ nav .brand-logo {
 }
 
 #index-banner .intro-container {
-  padding: 1rem 2rem;;
+  padding: 1rem 2rem;
+}
+
+#index-banner h1 {
+  color: #444;
 }
 
 @media screen and (min-width: 450px) {
@@ -173,6 +204,9 @@ nav .brand-logo {
 }
 
 @media screen and (min-width: 768px) {
+  #index-banner {
+    width: 100%;
+  }
   #index-banner .intro-container {
     max-width: 36rem;
   }
@@ -189,7 +223,7 @@ nav .brand-logo {
 
 
 .portfolio-list .card {
-  background: #48466D;
+  background: #2f3e75;
 }
 
 .portfolio-list .card-image {
@@ -202,7 +236,7 @@ nav .brand-logo {
 }
 
 .portfolio-list .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #f76262;
+  color: #eb7878;
 }
 
 .portfolio-list .isoshealth-image {
@@ -221,61 +255,35 @@ nav .brand-logo {
 
 /* index page ends */
 
-#isoshealth-intro .section {
-  color: #fff;
-}
-
-.isoshealth-main-img {
-  background: #fafafa;
-}
+/* isoshealth page */
 
 .my-role-row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.my-role-row .card {
-  /* margin: 0; */
-}
-
 .my-role-row .card .card-image {
-  /* background: #fafafa; */
-  padding: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+  border-top: 4rem solid #d0efb5;
 }
 
-.my-role-row .card-image:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 8rem;
-  top: -3rem;
-  left: 50%;
-  margin-left: -4rem;
-  height: 8rem;
-  border-radius: 100px;
-  background: rgba(70,205,207,0.2);
+.my-role-row .card .card-content {
+  padding-top: 0.5rem;
 }
 
-.context {
-  background: #fafafa;
+.my-role-row .card .card-title {
+  margin-bottom: 1rem;
+  color: #2f3e75;
+  font-weight: 500;
 }
 
-.process.image-container {
-  background-color: #fafafa;
-  margin-bottom: 20px;
-}
-
-.interactions {
-  background: #fafafa;
-  /* padding-top: 2rem; */
+.my-role-row .card .custom-icon {
+    color: #fff;
+    font-size: 2rem;
+    display: none;
 }
 
 
+/* isoshealth page ends */
 
 
 /* About page */
@@ -482,9 +490,9 @@ footer.page-footer {
     height: 150%;
   }
 
-  .process ul {
+  /* .process ul {
     padding-left: 1rem;
-  }
+  } */
 }
 
 .app-parallax-container {
