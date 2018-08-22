@@ -51,12 +51,12 @@ blockquote {
 
 a {
   color: #eb7878;
-
 }
 
 a:hover {
   text-decoration: underline;
 }
+
 
 /* main nav styles */
 
@@ -189,6 +189,21 @@ a.button-collapse i {
 .pagination .row .col {
   padding: 2rem;
 }
+
+
+/* .navbar-fixed {
+  z-index: 9;
+}
+
+#sidenav-overlay {
+  z-index: 11;
+}
+
+#nav-mobile {
+  z-index: 15;
+} */
+
+
 
 
 /* Index page- landing page */
@@ -420,8 +435,7 @@ a.button-collapse i {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background: #48466D;
-  color: rgba(255,255,255,.9);
+  background: #fafafa;
   padding: 6rem 0;
   height: calc(100vh - 258px);
 }
