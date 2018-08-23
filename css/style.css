@@ -80,7 +80,7 @@ nav ul li.active a {
 }
 
 .no-margin {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .pt-2 {
@@ -187,24 +187,18 @@ a.button-collapse i {
 }
 
 .pagination .row .col {
-  padding: 2rem;
+  padding: 1rem;
 }
 
-
-/* .navbar-fixed {
-  z-index: 9;
+@media screen and (min-width: 600px) {
+  .pagination .row .col {
+    padding: 2rem;
+  }
 }
 
-#sidenav-overlay {
-  z-index: 11;
+.white-bg {
+  background: #fff !important;
 }
-
-#nav-mobile {
-  z-index: 15;
-} */
-
-
-
 
 /* Index page- landing page */
 #index-banner {
@@ -283,8 +277,31 @@ a.button-collapse i {
 }
 
 .portfolio-list .card-title {
-  color: #48466D;
+  color: #2f3e75;
   font-weight: 500;
+}
+
+@media screen and (min-width: 600px) {
+  .portfolio-list .card-content {
+    min-height: 245px;
+  }
+}
+
+.portfolio-list .card-content .new.badge {
+  float: left;
+  color: #2f3e75;
+  background: #d0efb5;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+.portfolio-list .card-content .new.badge.first {
+  margin-left: 0;
+}
+
+.portfolio-list .card-content .roles {
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 /* index page ends */
