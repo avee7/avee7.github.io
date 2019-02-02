@@ -4,55 +4,94 @@
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1'/>
   <title>Avinash Kaur</title>
+  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
 
   <!-- CSS  -->
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link href='css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection'/>
+  <!-- <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS' crossorigin='anonymous'> -->
   <link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+  <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
+
 </head>
 <body>
-  <div class="navbar-fixed">
-    <nav class='white' role='navigation'>
-      <div class='nav-wrapper container'>
-        <a id='logo-container' href='#' class='brand-logo'></a>
-        <ul class='right hide-on-small-and-down'>
-          <li class='active'><a href='#' class='waves-effect'>Portfolio</a></li>
-          <li><a href='about-me.html' class='waves-effect'>About Me</a></li>
-          <li><a href='contact.html' class='waves-effect'>Contact</a></li>
-        </ul>
-        <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
-      </div>
-    </nav>
-  </div>
+
+  <nav role='navigation'>
+    <div class='nav-wrapper container-fluid'>
+      <a id='logo-container' href='index.html' class='brand-logo'>
+        <img src='images/avee-logo.png' alt='avee logo' />
+      </a>
+      <ul class='right hide-on-small-and-down'>
+        <li class='active'><a href='#' class='waves-effect'>Work</a></li>
+        <li><a href='about-me.html' class='waves-effect'>About Me</a></li>
+        <li><a href='contact.html' class='waves-effect'>Contact</a></li>
+      </ul>
+      <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
+    </div>
+  </nav>
+
   <ul id='nav-mobile' class='side-nav'>
-    <li class='active'><a href='#' class='waves-effect'>Portfolio</a></li>
+    <li><a href='index.html' class='waves-effect'>Work</a></li>
     <li><a href='about-me.html' class='waves-effect'>About Me</a></li>
     <li><a href='contact.html' class='waves-effect'>Contact</a></li>
   </ul>
 
   <div id='index-banner'>
-      <div class='intro-container'>
-        <h1 class='no-margin'>Avinash Kaur</h1>
-        <h5 class='strap-line'>I'm a UI/UX designer and a front-end developer, creating responsive user interfaces which are beautiful and scalable.</h5>
+      <div class='intro-container' data-aos='fade-down' data-aos-duration='1000'>
+        <h1 class='no-margin'>UX/UI Designer</h1>
+        <p class='strap-line'>Currently working at Springer Nature, focusing on
+          enhancing classroom learning experience and accessibility.
+          <br />
+          Previously working as a UI developer at Thoughtworks
+        </p>
+        <a class='btn' id='view_work'>
+          View my work</a>
       </div>
   </div>
 
-  <div class='container portfolio-list pt-3 pb-6'>
+  <div class='container portfolio-list pt-3 pb-6' id='recent_work'>
       <div class='row'>
         <div class='col s12 center'>
-          <h4>Recent Work</h4>
+          <h2>Recent Work</h2>
         </div>
       </div>
-      <div class='row no-margin portfolio-row'>
-        <div class='col s12 m6'>
-          <div class='card'>
-            <div class='card-image'>
-              <img src='images/isos-logo.png' alt='isoshealth' class='isoshealth-image'>
-            </div>
-            <div class='card-stacked'>
+      <div class='row'>
+        <div class='col s12'>
+          <div class='card row'>
+            <div class='card-image project-two-image col s12 m6 l4'></div>
+            <div class='card-stacked col s12 m6 l8'>
               <div class='card-content'>
-                <span class="card-title">Isoshealth</span>
+                <span class='card-title'>
+                  Navio
+                </span>
+                <p class='desc'>
+                  A digital platform that accompanies Macmillan
+                   Education’s English language courses for young learners.
+                   It provides teachers with a seamless transition between
+                   the coursebook and digital teaching activities.
+                </p>
+                <div class='roles'>
+                  <span class='new badge first' data-badge-caption=''>UX design</span>
+                  <span class='new badge' data-badge-caption=''>UI design</span>
+                </div>
+              </div>
+              <div class='card-action'>
+                <a href='work/navio.html'>Read more ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col s12'>
+          <div class='card row'>
+            <div class='card-image project-one-image col s12 m6 l4'></div>
+            <div class='card-stacked col s12 m6 l8'>
+              <div class='card-content'>
+                <span class='card-title'>
+                  Isoshealth
+                </span>
                 <p class='desc'>A web platform that allows people to carry out online consultations with a multidisciplinary team of healthcare professionals.</p>
                 <div class='roles'>
                   <span class='new badge first' data-badge-caption=''>UX design</span>
@@ -61,19 +100,17 @@
                 </div>
               </div>
               <div class='card-action'>
-                <a href='portfolio/isoshealth.html'>Read more ></a>
+                <a href='work/isoshealth.html'>Read more ></a>
               </div>
             </div>
           </div>
         </div>
-        <div class='col s12 m6'>
-          <div class='card airline-project'>
-            <div class='card-image center'>
-              <i class='material-icons medium flight-image'>flight</i>
-            </div>
-            <div class='card-stacked'>
+        <!-- <div class='col s12'>
+          <div class='card row'>
+            <div class='card-image col s12 m4 project-three-image'></div>
+            <div class='card-stacked col s12 m8'>
               <div class='card-content'>
-                <span class="card-title">Airline neutral</span>
+                <span class='card-title'>Airline neutral</span>
                 <p class='desc'>
                   A renowned airlines that allows the user to book flights, view flight status and schedule, manage bookings, etc.
                 </p>
@@ -84,21 +121,17 @@
                 </div>
               </div>
               <div class='card-action'>
-                <a href='portfolio/airline-neutral.html'>Read more ></a>
+                <a href='work/airline-neutral.html'>Read more ></a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class='row no-margin portfolio-row'>
-        <div class='col s12 m6'>
-          <div class='card'>
-            <div class='card-image center'>
-              <i class='material-icons medium flight-image'>local_pharmacy</i>
-            </div>
-            <div class='card-stacked'>
+        <div class='col s12'>
+          <div class='card row'>
+            <div class='card-image col s12 m4 project-four-image'></div>
+            <div class='card-stacked col s12 m8'>
               <div class='card-content'>
-                <span class="card-title">Workforce management tool for pharmaceutical companies</span>
+                <span class='card-title'>Workforce management tool for pharmaceutical companies</span>
                 <p class='desc'>
                   A web application tool designed for pharmaceutical companies to manage
                   its workforce across the US.
@@ -114,29 +147,27 @@
             </div>
           </div>
         </div>
-
-        <div class='col s12 m6'>
-          <div class='card'>
-            <div class='card-image center'>
-              <i class='material-icons medium flight-image'>work</i>
-            </div>
-            <div class='card-stacked'>
+        <div class='col s12'>
+          <div class='card row'>
+            <div class='card-image col s12 m4 project-five-image'></div>
+            <div class='card-stacked col s8'>
               <div class='card-content'>
-                <span class="card-title">Other Work</span>
+                <span class='card-title'>Go Cab</span>
                 <p class='desc'>
-                  This includes designing flyers, posters and some wireframing.
+                  Some text
                 </p>
                 <div class='roles'>
                   <span class='new badge first' data-badge-caption=''>UX design</span>
                   <span class='new badge' data-badge-caption=''>UI design</span>
+                  <span class='new badge' data-badge-caption=''>UI development</span>
                 </div>
               </div>
               <div class='card-action'>
-                <a href='portfolio/other-work.html' target='_blank'>View more ></a>
+                <a href='work/other-work.html' target='_blank'>Read more ></a>
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
   </div>
 
@@ -146,13 +177,13 @@
       <div class='row'>
         <div class='col l6 s12'>
           <p class='grey-text text-lighten-4 desc'>
-            I'm Avi, working as a UI/UX designer based in London.
+            I'm Avi, a UX/UI designer based in London.
             Apart from designing web interfaces, I enjoy painting, doodling and cooking.
           </p>
         </div>
         <div class='col l6 s12 site-map'>
           <ul ckass='right'>
-            <li><a class='white-text' href='index.html'>Portfolio</a></li>
+            <li><a class='white-text' href='index.html'>Work</a></li>
             <li><a class='white-text' href='about-me.html'>About Me</a></li>
             <li><a class='white-text' href='contact.html'>Contact</a></li>
           </ul>
@@ -161,8 +192,8 @@
     </div>
     <div class='footer-copyright'>
       <div class='container'>
-        <span class='grey-text text-lighten-4 desc'>
-          &copy; 2018 Avinash Kaur
+        <span class='grey-text text-lighten-2'>
+          &copy; 2019 Designed and Developed by Avinash Kaur
         </span>
       </div>
     </div>
@@ -172,6 +203,15 @@
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
   <script src='js/materialize.js'></script>
   <script src='js/init.js'></script>
+  <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+  <script>
+  AOS.init();
+  $('#view_work').click(function() {
+    $('html,body').animate({
+        scrollTop: $('.portfolio-list').offset().top },
+        1000);
+  });
+  </script>
 
   </body>
 </html>
