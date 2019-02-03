@@ -137,6 +137,9 @@ a.btn:hover {
 }
 
 @media only screen and (max-width : 600px) {
+  .pt-1 {
+    padding-top: 0.5rem !important;
+  }
   .pt-2 {
     padding-top: 1rem !important;
   }
@@ -287,7 +290,7 @@ ul.list-items>li {
   background: #212121;
   padding: 8rem 1rem;
   margin-top: -64px;
-  height: 60vh;
+  /* height: 60vh; */
   text-align: center;
 }
 
@@ -295,7 +298,7 @@ ul.list-items>li {
   font-size: 1.25rem;
   line-height: 1.8;
   color: #ebebeb;
-  text-align: left;
+  text-align: center;
 }
 
 @media screen and (min-width: 600px) {
@@ -514,11 +517,8 @@ ul.list-items>li {
 
 #isoshealth-intro {
   background: #0c2f3c;
-}
-
-#isoshealth-intro .logo-container {
-  max-width: 500px;
-  margin: 0 auto;
+  position: relative;
+  height: 60vh;
 }
 
 .my-role-row {
@@ -554,7 +554,7 @@ ul.list-items>li {
     height: 12rem;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .isoshealth-background {
@@ -710,20 +710,51 @@ ul.list-items>li {
 /* Navio */
 
 #navio-intro {
-  background: transparent url(../images/navio-banner.png) 0 0 no-repeat;
+  background: #ffffff url(../images/navio-banner.png) 0 0 no-repeat;
   background-size: cover;
   background-position: center bottom;
+  position: relative;
   height: 60vh;
+  width: 100%;
+}
+
+#navio-intro .navio-logo,
+#isoshealth-intro .isoshealth-logo {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 75vw;
+}
+
+#isoshealth-intro .isoshealth-logo {
+  max-width: 80%;
 }
 
 .big-wheel-image, .zoom-prototype-video {
-  max-width: 450px;
   margin: 0 auto;
   display: block;
 }
 
 .zoom-prototype-video {
   max-width: 600px;
+}
+
+@media screen and (min-width: 450px) {
+  .big-wheel-image, .zoom-prototype-video {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #navio-intro .navio-logo {
+    max-width: 400px;
+  }
+  #isoshealth-intro .isoshealth-logo {
+    max-width: 500px;
+  }
 }
 
 
