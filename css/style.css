@@ -88,6 +88,11 @@ a.btn:hover {
   margin: 0 auto;
 }
 
+.mtb-0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 .no-margin {
   margin: 0 !important;
 }
@@ -395,7 +400,7 @@ ul.list-items>li {
   background-position: center bottom;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 100%;
   top: -64px;
@@ -414,8 +419,6 @@ ul.list-items>li {
 }
 
 #index-banner .intro-container {
-  padding: 1rem 2rem;
-  text-align: center;
   z-index: 1;
 }
 
@@ -427,15 +430,6 @@ ul.list-items>li {
 @media screen and (min-width: 450px) {
   #index-banner .intro-container {
     max-width: 70vw;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  #index-banner {
-    width: 100%;
-  }
-  #index-banner .intro-container {
-    max-width: 40rem;
   }
 }
 
