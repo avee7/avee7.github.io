@@ -8,10 +8,12 @@
   <link rel='icon' href='/favicon.ico' type='image/x-icon'>
 
   <!-- CSS  -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link href='../css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='../css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
   <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
 </head>
 <body>
@@ -22,18 +24,16 @@
           <img src='../images/avee-logo-white.png' alt='avee logo' />
         </a>
         <ul class='right hide-on-small-and-down'>
-          <li><a href='../index.html' class='waves-effect'>Work</a></li>
-          <li><a href='../about-me.html' class='waves-effect'>About Me</a></li>
-          <li><a href='../contact.html' class='waves-effect'>Contact</a></li>
+          <li><a href='../index.html' class='waves-effect'>Portfolio</a></li>
+          <li><a href='../about-me.html' class='waves-effect'>About</a></li>
         </ul>
         <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
       </div>
     </nav>
   </div>
   <ul id='nav-mobile' class='side-nav'>
-    <li><a href='../index.html' class='waves-effect'>Work</a></li>
-    <li><a href='../about-me.html' class='waves-effect'>About Me</a></li>
-    <li><a href='../contact.html' class='waves-effect'>Contact</a></li>
+    <li><a href='../index.html' class='waves-effect'>Portfolio</a></li>
+    <li><a href='../about-me.html' class='waves-effect'>About</a></li>
   </ul>
 
   <div id='isoshealth-intro' class='sub-banner'>
@@ -93,7 +93,7 @@
               <div class='card-title'>Living Style Guide
               </div>
               <p class='desc'>Created a <a href='https://app.isoshealth.com/style-guide' target='blank'>
-                living style guide <img src='../images/external-link.png' width='16' alt='isoshealth style guide opens in a new tab'/></a> that helped the design
+                living style guide<i class="fas fa-external-link-alt"></i></a> that helped the design
                 and development team to be on the same page
               </p>
             </div>
@@ -238,28 +238,6 @@
     </div>
     <div class='container-fluid'>
       <div class='row pt-3'>
-        <!-- <div class='col s12 hide-on-med-and-down'>
-          <div class='carousel'>
-            <div class='carousel-item' href='#one!'>
-              <img src='../images/sketch1.jpg' alt='practitioner dashboard image' />
-              <div class='img-text center pt-1'>
-                Practitioner dashboard
-              </div>
-            </div>
-            <div class='carousel-item' href='#two!'>
-              <img src='../images/sketch2.jpg' alt='team profile image' />
-              <div class='img-text center pt-1'>
-                Team profile
-              </div>
-            </div>
-            <div class='carousel-item' href='#three!'>
-              <img src='../images/sketch3.jpg' alt='practitioner profile image' />
-              <div class='img-text center pt-1'>
-                Practitioner profile
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class='col s4'>
           <img src='../images/sketch1.jpg' alt='practitioner dashboard image' class='light-border'/>
           <div class='img-text center pt-1'>
@@ -348,7 +326,7 @@
           <h2>Living style guide</h2>
         </div>
         <div class='col s12'>
-          <p>Created a <a href='https://app.isoshealth.com/style-guide' target='blank'>style guide <img src='../images/external-link.png' width='20' alt='isoshealth style guide opens in a new tab'/></a> or
+          <p>Created a <a href='https://app.isoshealth.com/style-guide' target='blank'>style guide<i class="fas fa-external-link-alt"></i></a> or
             pattern library which comprised of visual styles and the components. This
             helped the designers and the developers to be on the same page.
              SASS variables and snippets of reactstrap code are also included.
@@ -381,24 +359,34 @@
   <footer class='page-footer'>
     <div class='container'>
       <div class='row'>
-        <div class='col l6 s12'>
-          <p class='grey-text text-lighten-4 desc'>
-            I'm Avi, a UX/UI designer based in London.
-            Apart from designing web interfaces, I enjoy painting, doodling and cooking.
-          </p>
+        <div class='col m6 s12 contact-links'>
+          <ul class='left'>
+            <li>
+              <a href='mailto:kauravee101@gmail.com'>
+                kauravee101@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>Linkedin
+              <i class="fas fa-external-link-alt"></i></a>
+            </li>
+            <li>
+              <a href='//github.com/avee7' target='_blank'>Github
+              <i class="fas fa-external-link-alt"></i></a>
+            </li>
+          </ul>
         </div>
-        <div class='col l6 s12 site-map'>
+        <div class='col m6 s12 site-nav'>
           <ul ckass='right'>
-            <li><a class='white-text' href='../index.html'>Work</a></li>
-            <li><a class='white-text' href='../about-me.html'>About Me</a></li>
-            <li><a class='white-text' href='../contact.html'>Contact</a></li>
+            <li><a href='../index.html'>Portfolio</a></li>
+            <li><a href='../about-me.html'>About</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class='footer-copyright'>
       <div class='container'>
-        <span class='grey-text text-lighten-2'>
+        <span class=''>
           &copy; 2019 Designed and Developed by Avinash Kaur
         </span>
       </div>

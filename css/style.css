@@ -9,8 +9,15 @@ body.navio {
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
 }
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 
 
 /* Typography */
@@ -184,13 +191,14 @@ nav .brand-logo {
 
 nav .brand-logo {
   width: 7rem;
-  height: auto;
+  /* height: auto; */
   left: 50%;
   transform: translateX(-50%);
 }
 
 nav .brand-logo img {
   max-width: 100%;
+  margin-top: 1px;
 }
 
 nav ul li {
@@ -236,6 +244,7 @@ nav ul li.active a:hover {
 a.button-collapse {
   color: #0D47A1;
   text-decoration: none;
+  margin-left: 0;
 }
 
 .text-light a.button-collapse {
@@ -286,30 +295,23 @@ ul.list-items>li {
     height: auto;
   }
 }
-/*
-.carousel.carousel-slider {
-  height: 400px !important;
-} */
+
+.fas.fa-external-link-alt {
+  color: #0D47A1;
+  margin-left: 0.25rem;
+  font-size: 1rem;
+}
 
 .sub-banner {
   background: #212121;
   padding: 8rem 1rem;
   margin-top: -64px;
   /* height: 60vh; */
-  text-align: center;
+  color: #ebebeb;
 }
 
 .sub-banner .header {
-  font-size: 1.25rem;
-  line-height: 1.8;
   color: #ebebeb;
-  text-align: center;
-}
-
-@media screen and (min-width: 600px) {
-  .sub-banner .header {
-    text-align: center;
-  }
 }
 
 .bg-container {
@@ -318,7 +320,7 @@ ul.list-items>li {
 
 .container-fluid {
   width: 100%;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 
 .desc {
@@ -425,6 +427,12 @@ ul.list-items>li {
 #index-banner h1,
 #index-banner .strap-line {
   color: #212121;
+}
+
+@media screen and (max-width: 320px) {
+  #index-banner .intro-container {
+    padding-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 450px) {
@@ -545,7 +553,7 @@ ul.list-items>li {
 
 .isoshealth-coding-image {
     background-image: url('../images/code.png');
-    height: 12rem;
+    height: 20rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -560,24 +568,18 @@ ul.list-items>li {
 
 /* About page */
 
-#about-banner h2 {
+#about-banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #212121;
   color: #ebebeb;
+  margin-top: -64px;
 }
 
-.sub-banner.journey {
-  padding: 6rem 0;
-}
-
-.sub-banner.journey .header {
-  font-size: 2.5rem;
-}
-
-@media screen and (min-width: 600px) {
-  #about-banner .header {
-    width: 50vw;
-    padding: 0;
-    margin: 0 auto;
-  }
+#about-banner h2,
+#about-banner .header {
+  color: #ebebeb;
 }
 
 .my-journey dl {
@@ -667,6 +669,7 @@ ul.list-items>li {
     padding-left: 2rem;
   }
 }
+
 
 /* About page ends*/
 
@@ -783,17 +786,35 @@ footer.page-footer {
   background: #212121;
 }
 
-.footer-copyright {
-  font-size: 0.8rem;
+.footer-copyright,
+.page-footer .fas.fa-external-link-alt {
+  font-size: 0.75rem;
+  color: #ebebeb;
 }
 
-.site-map ul {
-  float: right;
+@media screen and (min-width: 600px) {
+  .site-nav ul {
+    float: right;
+  }
 }
 
-.site-map li {
+
+.site-nav li,
+.contact-links li {
   float: left;
   padding-left: 1rem;
+  color: #ebebeb;
+  font-size: 0.875rem;
+}
+
+.site-nav li a,
+.contact-links li a {
+  color: #ebebeb;
+}
+
+.contact-links li:first-child,
+.site-nav li:first-child {
+  padding-left: 0;
 }
 
 /* footer styles end */

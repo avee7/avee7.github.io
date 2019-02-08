@@ -8,10 +8,12 @@
   <link rel='icon' href='/favicon.ico' type='image/x-icon'>
 
   <!-- CSS  -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link href='css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 </head>
 <body>
 
@@ -22,9 +24,8 @@
           <img src='../images/avee-logo-white.png' alt='avee logo'/>
         </a>
         <ul class='right hide-on-small-and-down'>
-          <li><a href='../index.html' class='waves-effect'>Work</a></li>
-          <li class='active'><a href='../about-me.html' class='waves-effect'>About Me</a></li>
-          <li><a href='../contact.html' class='waves-effect'>Contact</a></li>
+          <li><a href='../index.html' class='waves-effect'>Portfolio</a></li>
+          <li class='active'><a href='../about-me.html' class='waves-effect'>About</a></li>
         </ul>
         <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
       </div>
@@ -32,41 +33,42 @@
   </div>
 
   <ul id='nav-mobile' class='side-nav'>
-    <li><a href='index.html' class='waves-effect'>Work</a></li>
-    <li class='active'><a href='about-me.html' class='waves-effect'>About Me</a></li>
-    <li><a href='contact.html' class='waves-effect'>Contact</a></li>
+    <li><a href='index.html' class='waves-effect'>Portfolio</a></li>
+    <li class='active'><a href='about-me.html' class='waves-effect'>About</a></li>
   </ul>
 
-  <div class='sub-banner' id='about-banner'>
-    <h2>Hi, I'm Avinash Kaur</h2>
-    <div class='header'>UX/UI designer based in London.</div>
-    <div class='header'>
-      I believe in design which is beautiful, scalable and accessible to all.
-    </div>
-  </div>
-
-  <div class='container pt-3'>
-    <div class='row'>
-      <div class='col s12'>
-        <p>
-            I enjoy designing and developing user-centric interfaces for web and mobile.
-            My love for design inspired me to transform from a developer to designer. I
-            enjoy both the analytical and the creative side of the design process.
-          </p><p>
-            My work experience includes conceptualising ideas into interfaces,
-            sketching, paper and digital prototyping, building design systems,
-            interaction design and front-end development.
-          </p>
-      </div>
-    </div>
-  </div>
-
-  <div class='journey pt-3'>
+  <div id='about-banner'>
     <div class='container'>
       <div class='row'>
-        <h2 class='col s12 header'>
-          My Journey
-        </h2>
+        <div class='col s12 m8'>
+          <h4 class='header'>
+            I believe in design which is beautiful, scalable and accessible to all.
+          </h4>
+          <p>I design user interfaces for web and mobile.</p>
+          <p>
+              My work experience includes conceptualising ideas into interfaces,
+              sketching, paper and digital prototyping, interaction design,
+              building design systems and front-end development.
+          </p>
+        </div>
+      </div>
+      <a class='btn mt-3' id='view_journey'>
+        View my journey
+      </a>
+    </div>
+
+  </div>
+
+  <div class='journey pt-3' id='my_journey'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col s12'>
+          <h2 class='header'>
+            My Journey
+          </h2>
+          <p>My love for design inspired me to transform from a developer to designer. I
+            enjoy both the analytical and creative side of the design process.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -81,11 +83,9 @@
         <h6 class='title'>UX/UI Designer, Macmillan Education</h6>
         <dl>
           <dt>
-            <a href='https://macmillannavio.com/' target='blank' class='bold'>Navio</a>
-            <a href='https://macmillannavio.com/' target='blank'>
-              <img src='images/external-link.png' width='18' alt='opens in a new tab'/>
+            <a href='https://macmillannavio.com/' target='blank' class='bold'>Navio
+              <i class='fas fa-external-link-alt'></i>
             </a>
-
           </dt>
           <dd>
             Navio is a digital platform that accompanies Macmillan Education’s English
@@ -105,10 +105,10 @@
         <h6 class='title'>Digital Designer</h6>
         <dl>
           <dt>
-            <a href='https://app.isoshealth.com' target='blank' class='bold'>isoshealth</a>
-            <a href='https://app.isoshealth.com' target='blank'>
-              <img src='images/external-link.png' width='18' alt='opens in a new tab'/>
+            <a href='https://app.isoshealth.com' target='blank' class='bold'>
+              isoshealth<i class='fas fa-external-link-alt'></i>
             </a>
+
           </dt>
           <dd>
             Carried out requirements gathering, brainstorming sessions, paper &
@@ -118,9 +118,8 @@
         </dl>
         <dl>
           <dt>
-            <a href='https://www.buddyhub.co.uk' target='blank' class='bold'>Buddyhub</a>
-            <a href='https://www.buddyhub.co.uk' target='blank'>
-              <img src='images/external-link.png' width='18' alt='opens in a new tab'/>
+            <a href='https://www.buddyhub.co.uk' target='blank' class='bold'>
+              Buddyhub<i class='fas fa-external-link-alt'></i>
             </a>
           </dt>
           <dd>
@@ -192,9 +191,8 @@
         <h6 class='title'>Front-end Developer</h6>
         <dl>
           <dt>
-            <a href='http://www.roomtheagency.com/about_room.html' target='blank' class='bold'>RooM by Pocketstock</a>
-            <a href='http://www.roomtheagency.com/about_room.html' target='blank'>
-              <img src='images/external-link.png' width='18' alt='opens in a new tab'/>
+            <a href='http://www.roomtheagency.com/about_room.html' target='blank' class='bold'>
+              RooM by Pocketstock<i class='fas fa-external-link-alt'></i>
             </a>
           </dt>
           <dd>
@@ -210,24 +208,32 @@
   <footer class='page-footer'>
     <div class='container'>
       <div class='row'>
-        <div class='col l6 s12'>
-          <p class='grey-text text-lighten-4 desc'>
-            I'm Avi, a UX/UI designer based in London.
-            Apart from designing web interfaces, I enjoy painting, doodling and cooking.
-          </p>
+        <div class='col m6 s12 contact-links'>
+          <ul class='left'>
+            <li>
+              <a href='mailto:kauravee101@gmail.com'>
+                kauravee101@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>Linkedin<i class='fas fa-external-link-alt'></i></a>
+            </li>
+            <li>
+              <a href='//github.com/avee7' target='_blank'>Github<i class='fas fa-external-link-alt'></i></a>
+            </li>
+          </ul>
         </div>
-        <div class='col l6 s12 site-map'>
+        <div class='col m6 s12 site-nav'>
           <ul ckass='right'>
-            <li><a class='white-text' href='index.html'>Work</a></li>
-            <li><a class='white-text' href='about-me.html'>About Me</a></li>
-            <li><a class='white-text' href='contact.html'>Contact</a></li>
+            <li><a href='index.html'>Portfolio</a></li>
+            <li><a href='about-me.html'>About</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class='footer-copyright'>
       <div class='container'>
-        <span class='grey-text text-lighten-2'>
+        <span class=''>
           &copy; 2019 Designed and Developed by Avinash Kaur
         </span>
       </div>
@@ -238,6 +244,15 @@
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
   <script src='js/materialize.js'></script>
   <script src='js/init.js'></script>
+  <script>
+  $(document).ready(function() {
+    $('#view_journey').click(function() {
+      $('html,body').animate({
+          scrollTop: $('#my_journey').offset().top },
+          1000);
+    });
+  });
+  </script>
 
   </body>
 </html>
