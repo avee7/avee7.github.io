@@ -346,7 +346,8 @@ ul.list-items>li {
 .fas.fa-external-link-alt {
   color: #0D47A1;
   margin-left: 0.25rem;
-  font-size: 0.78rem;
+  font-size: 0.5rem;
+  vertical-align: middle;
 }
 
 .sub-banner {
@@ -417,6 +418,7 @@ ul.list-items>li {
   background: #ebebeb;
   padding: 0 1rem;
   margin-top: 0.5rem;
+  border-radius: 1rem;
 }
 
 .row .new.badge.first {
@@ -899,8 +901,9 @@ footer.page-footer {
 
 .footer-copyright,
 .page-footer .fas.fa-external-link-alt {
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   color: #ebebeb;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 600px) {
