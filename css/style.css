@@ -1,6 +1,6 @@
 body {
   color: #212121;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background: #f6f6f6;
 }
 
@@ -27,7 +27,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.25;
   font-weight: 500;
   color: #212121;
@@ -225,6 +225,8 @@ a.btn:hover {
 nav {
   box-shadow: none;
   background-color: transparent;
+  position: absolute;
+  top: 0;
 }
 
 nav ul a,
@@ -232,26 +234,30 @@ nav .brand-logo {
   color: #212121;
   font-size: 1rem;
   font-weight: 500;
+  padding: 0 1.25rem;
   text-decoration: none;
   z-index: 99;
 }
 
 nav .brand-logo {
-  width: 7rem;
+  /* width: 7rem; */
   /* height: auto; */
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  font-size: 1.25rem;
+  padding-top: 20px;
+  line-height: 40px;
 }
 
-nav .brand-logo img {
+/* nav .brand-logo img {
   max-width: 100%;
   margin-top: 1px;
-}
+} */
 
 nav ul li {
   line-height: 40px;
-  /* padding-top: 10px; */
-  padding: 10px 0.5rem;
+  
+  padding: 20px 0.5rem;
   /* padding-bottom: 1rem; */
 }
 
@@ -280,6 +286,7 @@ nav ul li.active a:hover {
   text-decoration: none;
 }
 
+.text-light .brand-logo,
 .text-light nav ul li a {
   color: #fff;
 }
@@ -306,10 +313,10 @@ a.button-collapse i {
   nav a.button-collapse {
      display: none;
    }
-   nav .brand-logo {
+   /* nav .brand-logo {
      left: 20px;
      transform: none;
-   }
+   } */
 }
 
 /* Header styles end */
@@ -491,14 +498,15 @@ ul.list-items>li {
 @media screen and (min-width: 450px) {
   #index-banner .intro-container {
     max-width: 70vw;
+    padding-top: 10rem;
   }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   #index-banner h1 {
     font-size: 4rem;
   }
-}
+} */
 
 .portfolio-list .card {
   display: flex;
