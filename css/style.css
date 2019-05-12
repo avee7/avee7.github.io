@@ -74,6 +74,8 @@ a:hover {
   height: auto;
   background: #0D47A1;
   color: #fff;
+  box-shadow: none;
+  border: solid 1px #0D47A1;
 }
 
 .btn:hover {
@@ -82,6 +84,11 @@ a:hover {
 
 a.btn:hover {
   text-decoration: none;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #0D47A1;
 }
 
 .table {
@@ -260,8 +267,8 @@ nav .brand-logo {
 
 nav ul li {
   line-height: 40px;
-  
-  padding: 20px 0.5rem;
+
+  padding: 10px 0.5rem;
   /* padding-bottom: 1rem; */
 }
 
@@ -419,7 +426,6 @@ ul.list-items>li {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
 }
 
 .white-bg {
@@ -498,6 +504,10 @@ ul.list-items>li {
 #index-banner h1,
 #index-banner .strap-line {
   color: #212121;
+}
+
+#index-banner .strap-line {
+  margin: 0.5rem 0 0 0;
 }
 
 @media screen and (max-width: 320px) {
@@ -580,6 +590,10 @@ ul.list-items>li {
 .portfolio-list .card-content .roles {
   margin: 1rem 0;
   display: inline-block;
+}
+
+#view_work {
+  margin-left: 0.5rem;
 }
 
 /* index page ends */
