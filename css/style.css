@@ -284,7 +284,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: none;
-  border-radius: 40px;
 }
 
 nav ul li.active {
@@ -292,8 +291,7 @@ nav ul li.active {
 }
 
 nav ul li.active a {
-  border: solid 1px #212121;
-  border-radius: 40px;
+  border-bottom: solid 8px #f4e594;
   background: none;
 }
 
@@ -301,14 +299,10 @@ nav ul li.active a:hover {
   text-decoration: none;
 }
 
-.text-light .brand-logo,
-.text-light nav ul li a {
-  color: #fff;
+.text-light nav ul li.active a {
+  border-bottom: solid 8px rgba(33,33,33,0.8);
 }
 
-.text-light nav ul li.active a {
-  border-color: #fff;
-}
 
 a.button-collapse {
   color: #0D47A1;
@@ -343,7 +337,7 @@ a.button-collapse i {
 
 
 ul.list-items {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   list-style-type: disc;
   padding-left: 1.25rem;
 }
@@ -418,6 +412,7 @@ ul.list-items>li {
   font-size: 0.85rem;
   color: #979797;
   font-style: italic;
+  list-style-type: none !important;
 }
 
 .sub-text {
@@ -429,7 +424,7 @@ ul.list-items>li {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
+  height: 350px;
 }
 
 .white-bg {
@@ -443,14 +438,50 @@ ul.list-items>li {
 .row .new.badge {
   float: left;
   color: #212121;
-  background: #ebebeb;
-  padding: 0 1rem;
+  border: solid 1px #d8d8d8;
+  padding: 0 0.5rem;
   margin-top: 0.5rem;
   border-radius: 1rem;
+  background: none;
+  line-height: 20px;
 }
 
 .row .new.badge.first {
   margin-left: 0;
+}
+
+.blockquote {
+  font-size: 1.25rem;
+  position: relative;
+  padding-left: 2rem;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.blockquote:before {
+  content:'\201C';
+  display: block;
+  font-size: 3rem;
+  /* line-height: 10px; */
+
+  top: -0.5rem;
+  left: -0.5rem;
+  position: absolute;
+}
+
+.blockquote:after {
+  content:'\201D';
+  display: block;
+  font-size: 3rem;
+  /* line-height: 10px; */
+  text-align: right;
+
+  position: absolute;
+  bottom: -0.5rem;
+  right: -0.5rem;
+}
+
+.flex-container {
+  display: flex;
 }
 
 /* Common styles end  */
@@ -463,12 +494,12 @@ ul.list-items>li {
 }
 
 .pagination .row .col {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 @media screen and (min-width: 600px) {
   .pagination .row .col {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -653,18 +684,26 @@ ul.list-items>li {
   background: #0C2F3C;
 }
 
+/* .isoshealth-intro .card-image img {
+  height: 50vh;
+} */
+
+.isoshealth-intro .logo-container {
+  width: 210px;
+}
+
 /* isoshealth page ends */
 
 
 /* About page */
 
 #about-banner {
+  padding-top: 6rem;
   height: 100vh;
   display: flex;
   align-items: center;
-  background: #212121;
-  color: #ebebeb;
-  margin-top: -64px;
+  background: #f4e594;
+  color: #212121;
 }
 
 #about-banner h2,
@@ -772,7 +811,7 @@ ul.list-items>li {
   align-items: center;
   width: 100%;
   padding: 6rem 0;
-  height: calc(100vh - 258px);
+  min-height: 80vh;
 }
 
 #contact-banner .row {
@@ -808,8 +847,8 @@ ul.list-items>li {
   left: 0;
 }
 
-.navio-intro, .isoshealth-intro {
-  padding-top: 7rem;
+.navio-intro, .isoshealth-intro, .airline-neutral-intro, .yomu-intro{
+  padding-top: 6rem;
 }
 
 .navio-intro .card.horizontal .card-image img {
@@ -819,6 +858,24 @@ ul.list-items>li {
 .navio-intro .navio-logo {
   width: 150px
 }
+
+.navio-app-image1 {
+  position: absolute;
+  width: 300px;
+  right: 8px;
+  top: 165px;
+}
+.navio-app-image2 {
+  position: absolute;
+  left: -25px;
+  width: 520px;
+}
+
+.navio .author-name {
+  margin-right: 2rem;
+  font-size: 0.8rem;
+}
+
 
 #isoshealth-intro .isoshealth-logo {
   margin: auto;
@@ -888,9 +945,14 @@ ul.list-items>li {
   padding-left: 1rem;
 }
 
-.navio-process ul, .navio-process ul li {
+.navio ul, .navio ul li {
   list-style-type: disc;
   font-size: 1rem;
+}
+
+.navio-process .row {
+  display: flex;
+  align-items: center;
 }
 
 .table-cell .app-logo {
@@ -898,9 +960,10 @@ ul.list-items>li {
   /* display: block; */
 }
 
-.navio .card-content.big-card {
+.card-content.big-card {
   /* padding: 3rem; */
-  padding: 2.5rem;
+  /* padding: 2.5rem 2rem; */
+  padding: 1.5rem 2rem 2rem;
 }
 
 .navio .card-image.row {
@@ -926,12 +989,7 @@ ul.list-items>li {
 
 /* Airline project */
 
-#airline-neutral-intro {
-    background: #f6f6f6 url(../images/project-image3.png) 65% center no-repeat;
-    background-size: 55% auto;
-    position: relative;
-    height: 60vh;
-}
+
 
 #airline-neutral-intro .greyed-out {
   position: absolute;
@@ -982,6 +1040,16 @@ ul.list-items>li {
 
 }
 
+.airline-neutral-intro .project ul,
+.airline-neutral-intro .project ul li {
+  list-style-type: disc;
+}
+
+.airline-neutral-intro .main-image {
+  position: absolute;
+  top: -8rem;
+  left: calc(50% - 200px);
+}
 
 /* Airline styles end */
 
@@ -995,9 +1063,13 @@ footer.page-footer {
 
 .footer-copyright,
 .page-footer .fas.fa-external-link-alt {
-  font-size: 0.5rem;
+  font-size: 0.875rem;
   color: #ebebeb;
   vertical-align: middle;
+}
+
+.page-footer .fas.fa-external-link-alt {
+  font-size: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -1006,13 +1078,18 @@ footer.page-footer {
   }
 }
 
+.page-footer ul {
+  list-style-type: none !important;
+}
+
 
 .site-nav li,
 .contact-links li {
+  list-style-type: none !important;
   float: left;
   padding-left: 1rem;
   color: #ebebeb;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .site-nav li a,
@@ -1026,3 +1103,75 @@ footer.page-footer {
 }
 
 /* footer styles end */
+
+
+/* yomu styles start */
+
+.yomu-intro .help-text {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.process-diagram .phase {
+  padding: 0;
+}
+
+.process-diagram .name {
+  padding: 2rem;
+background: #4A5560;
+position: relative;
+border: solid 10px #4A5560;
+font-family: 'Permanent Marker', cursive;
+font-size: 1.5rem;
+color: #fff;
+}
+
+
+.process-diagram .name:after {
+  content: '';
+  border-left: solid 2rem #4A5560;
+  border-right: solid 2rem transparent;
+  border-top: solid 3rem transparent;
+  border-bottom: solid 3rem transparent;
+  position: absolute;
+  right: -72px;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.process-diagram .name.second:after {
+  right: -92px;
+}
+
+.process-diagram .name.first,
+.process-diagram .name.third {
+  background: #212121;
+
+}
+.process-diagram .name.first:after,
+.process-diagram .name.third:after  {
+  border-left-color: #212121;
+}
+
+.process-diagram .name.last:after {
+  display: none;
+}
+
+.process-diagram .activities {
+  padding: 1rem 1rem 0.5rem 1rem;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.process-diagram .activities li {
+  list-style-type: disc;
+}
+
+/* temporary style */
+.fas.fa-external-link-alt {
+  display: none;
+}
