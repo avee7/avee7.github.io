@@ -8,29 +8,37 @@
   <link rel='icon' href='/favicon.ico' type='image/x-icon'>
 
   <!-- CSS  -->
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css' integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr' crossorigin='anonymous'>
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link href='css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
+
 </head>
 <body>
-  <nav role='navigation'>
-    <div class='nav-wrapper container-fluid'>
-      <a id='logo-container' href='index.html' class='brand-logo'>
-        <img src='images/avee-logo.png' alt='avee logo'/>
-      </a>
-      <ul class='right hide-on-small-and-down'>
-        <li><a href='index.html' class='waves-effect'>Portfolio</a></li>
-        <li><a href='about-me.html' class='waves-effect'>About Me</a></li>
-        <li class='active'><a href='contact.html' class='waves-effect'>Contact</a></li>
-      </ul>
-      <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
-    </div>
-  </nav>
+
+  <!-- <div class='text-light'> -->
+    <nav role='navigation'>
+      <div class='nav-wrapper container-fluid'>
+        <a id='logo-container' href='index.html' class='brand-logo'>
+          Avinash Kaur
+        </a>
+        <ul class='right hide-on-small-and-down'>
+          <li><a href='index.html' class='waves-effect'>Portfolio</a></li>
+          <li><a href='about-me.html' class='waves-effect'>About</a></li>
+          <li class='active'><a href='contact.html' class='waves-effect'>Contact</a></li>
+        </ul>
+        <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
+      </div>
+    </nav>
+  <!-- </div> -->
+
   <ul id='nav-mobile' class='side-nav'>
     <li><a href='index.html' class='waves-effect'>Portfolio</a></li>
-    <li><a href='about-me.html' class='waves-effect'>About Me</a></li>
-    <li class='active'><a href='contact.html' class='waves-effect'>Contact</a></li>
+    <li><a href='about-me.html' class='waves-effect'>About</a></li>
+    <li class='active'><a href='contact.html'>Contact</a></li>
   </ul>
   <div id='contact-banner'>
     <div class='container'>
@@ -45,18 +53,18 @@
           <h5>
             Linkedin:
             <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>Avinash Kaur</a>
-            <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>
+            <!-- <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>
               <img src='images/external-link.png' width='25' alt='linkedin profile opens in a new tab'/>
-            </a>
+            </a> -->
           </h5>
         </li>
         <li class='col s12'>
             <h5>
                 Github:
               <a href='//github.com/avee7' target='_blank'>avee7</a>
-              <a href='//github.com/avee7' target='_blank'>
+              <!-- <a href='//github.com/avee7' target='_blank'>
                 <img src='images/external-link.png' width='25' alt='github profile opens in a new tab'/>
-              </a>
+              </a> -->
             </h5>
         </li>
       </ul>
@@ -64,27 +72,38 @@
   </div>
 
 
+
+
   <footer class='page-footer'>
     <div class='container'>
       <div class='row'>
-        <div class='col l6 s12'>
-          <p class='grey-text text-lighten-4 desc'>
-            I'm Avi, a UX/UI designer based in London.
-            Apart from designing web interfaces, I enjoy painting, doodling and cooking.
-          </p>
+        <div class='col m6 s12 contact-links'>
+          <ul class='left'>
+            <li>
+              <a href='mailto:kauravee101@gmail.com'>
+                kauravee101@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href='//linkedin.com/in/avinash-kaur9/' target='_blank'>Linkedin<i class='fas fa-external-link-alt'></i></a>
+            </li>
+            <li>
+              <a href='//github.com/avee7' target='_blank'>Github<i class='fas fa-external-link-alt'></i></a>
+            </li>
+          </ul>
         </div>
-        <div class='col l6 s12 site-map'>
+        <div class='col m6 s12 site-nav'>
           <ul ckass='right'>
-            <li><a class='white-text' href='index.html'>Portfolio</a></li>
-            <li><a class='white-text' href='about-me.html'>About Me</a></li>
-            <li><a class='white-text' href='contact.html'>Contact</a></li>
+            <li><a href='index.html'>Portfolio</a></li>
+            <li><a href='about-me.html'>About</a></li>
+            <li><a href='contact.html'>Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class='footer-copyright'>
       <div class='container'>
-        <span class='grey-text text-lighten-2'>
+        <span class=''>
           &copy; 2019 Designed and Developed by Avinash Kaur
         </span>
       </div>
@@ -95,6 +114,7 @@
   <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
   <script src='js/materialize.js'></script>
   <script src='js/init.js'></script>
+  <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
 
   </body>
 </html>
