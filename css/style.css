@@ -1176,6 +1176,11 @@ color: #fff;
   list-style-type: disc;
 }
 
+.landing-page-yomu .card-image {
+  display: flex;
+  align-items: center;
+}
+
 /* temporary style */
 .fas.fa-external-link-alt {
   display: none;
