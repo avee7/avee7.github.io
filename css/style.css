@@ -70,7 +70,7 @@ a:hover {
 }
 
 .btn {
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 1rem;
   height: auto;
   background: #0D47A1;
   color: #fff;
@@ -262,12 +262,15 @@ nav .brand-logo {
   font-size: 1.25rem;
   margin-top: 10px;
   line-height: 40px;
+  width: 60%;
 }
 
-/* nav .brand-logo img {
-  max-width: 100%;
-  margin-top: 1px;
-} */
+@media screen and (min-width: 600px) {
+  nav .brand-logo {
+    width: 100%;
+
+  }
+}
 
 nav ul li {
   line-height: 40px;
@@ -441,6 +444,7 @@ ul.list-items>li {
   border: solid 1px #d8d8d8;
   padding: 0 0.5rem;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   border-radius: 1rem;
   background: none;
   line-height: 20px;
@@ -537,7 +541,7 @@ ul.list-items>li {
   width: 100%;
 }
 
-#index-banner .intro-container {
+#index-banner>.container {
   z-index: 1;
 }
 
@@ -558,16 +562,36 @@ ul.list-items>li {
 
 @media screen and (min-width: 450px) {
   #index-banner .intro-container {
-    max-width: 70vw;
-    padding-top: 10rem;
+    /* max-width: 70vw; */
+    /* max-width: 50vw; */
+    /* padding-top: 10rem; */
   }
 }
 
-/* @media screen and (min-width: 992px) {
-  #index-banner h1 {
-    font-size: 4rem;
+@media screen and (min-width: 600px) {
+  #index-banner .intro-container {
+    max-width: 70vw;
   }
-} */
+}
+
+@media screen and (min-width: 992px) {
+  #index-banner .intro-container {
+    padding-top: 8rem;
+    max-width: 45vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #index-banner .intro-container {
+    max-width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #index-banner .intro-container {
+    max-width: 34vw;
+  }
+}
 
 .portfolio-list .card {
   display: flex;
@@ -633,7 +657,20 @@ ul.list-items>li {
 }
 
 #view_work {
-  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  min-width: 206px;
+}
+
+
+@media screen and (min-width: 601px) {
+  #view_work{
+    margin-top: 0;
+  }
+}
+
+
+.intro-container .button-container .btn {
+  width: 100%;
 }
 
 /* index page ends */
