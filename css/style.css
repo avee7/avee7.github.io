@@ -425,9 +425,11 @@ ul.list-items>li {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 200px;
   line-height: 0;
-  height: 350px;
+  height: auto;
+  width: 100vw;
+  /* height: 350px; */
 }
 
 .white-bg {
@@ -992,10 +994,10 @@ ul.list-items>li {
   font-size: 1rem;
 }
 
-.navio-process .row {
+/* .navio-process .row {
   display: flex;
   align-items: center;
-}
+} */
 
 .table-cell .app-logo {
   width: 60px;
