@@ -111,6 +111,8 @@ a.btn:hover {
   border-right: solid 1px #c7c7c7;
   border-bottom: solid 1px #c7c7c7;
   vertical-align: middle;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .table-cell img {
@@ -242,10 +244,11 @@ nav {
   background-color: transparent;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 nav ul a,
-nav .brand-logo {
+nav .brand-logo-container {
   color: #212121;
   font-size: 1rem;
   font-weight: 500;
@@ -254,23 +257,19 @@ nav .brand-logo {
   z-index: 99;
 }
 
-nav .brand-logo {
-  /* width: 7rem; */
-  /* height: auto; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
+nav .brand-logo-container {
   font-size: 1.25rem;
   margin-top: 10px;
   line-height: 40px;
-  width: 60%;
+  /* width: 60%; */
 }
 
-@media screen and (min-width: 600px) {
-  nav .brand-logo {
-    width: 100%;
+/* @media screen and (min-width: 600px) {
+  nav .brand-logo-container {
+    width: 40%;
 
   }
-}
+} */
 
 nav ul li {
   line-height: 40px;
@@ -325,10 +324,6 @@ a.button-collapse i {
   nav a.button-collapse {
      display: none;
    }
-   /* nav .brand-logo {
-     left: 20px;
-     transform: none;
-   } */
 }
 
 /* Header styles end */
@@ -486,9 +481,25 @@ ul.list-items>li {
   right: -0.5rem;
 }
 
-.flex-container {
+.flex-container-full-and-half.row {
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+.flex-container-full-and-half.row .col {
+  flex: 0 0 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .flex-container-full-and-half.row {
+    flex-direction: row;
+  }
+  .flex-container-full-and-half.row .col {
+    flex-basis: auto;
+  }
+}
+
 
 .diagram-heading {
   font-family: 'Permanent Marker', cursive;
@@ -1094,11 +1105,14 @@ ul.list-items>li {
   list-style-type: disc;
 }
 
-.airline-neutral-intro .main-image {
-  position: absolute;
-  top: -8rem;
-  left: calc(50% - 200px);
+@media screen and (min-width: 450px) {
+  .airline-neutral-intro .main-image {
+    position: absolute;
+    top: -8rem;
+    left: calc(50% - 200px);
+  }
 }
+
 
 /* Airline styles end */
 
