@@ -706,31 +706,42 @@ ul.list-items>li {
 
 .my-role-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
-.my-role-row .card .card-title {
+@media screen and (min-width: 450px) {
+  .my-role-row {
+    flex-direction: row;
+  }
+}
+
+.my-role-row>.col.card {
+  margin-left: 0.75rem;
+}
+
+/* .my-role-row .card .card-title {
   margin-bottom: 1rem;
   font-weight: 400;
-}
+} */
 
-.my-role-row .card .custom-icon {
+/* .my-role-row .card .custom-icon {
     color: #fff;
     font-size: 2rem;
     display: none;
-}
+} */
 
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
   #isoshealth .my-role-row .card {
     min-height: 250px;
   }
-}
+} */
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   #isoshealth .my-role-row .card {
     min-height: 310px;
   }
-}
+} */
 
 .isoshealth-coding-image {
     background-image: url('../images/code.png');
@@ -1232,7 +1243,7 @@ footer.page-footer {
 
 
 .process-diagram .activities {
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem 1rem 0.5rem 1.5rem;
   text-align: left;
   list-style-type: disc;
 }
