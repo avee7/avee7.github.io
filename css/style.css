@@ -312,10 +312,6 @@ a.button-collapse {
   margin-left: 0;
 }
 
-.text-light a.button-collapse {
-  color: #fff;
-}
-
 a.button-collapse i {
   font-size: 2rem;
 }
@@ -770,11 +766,15 @@ ul.list-items>li {
 
 #about-banner {
   padding-top: 6rem;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  min-height: 100vh;
   background: #f4e594;
   color: #212121;
+}
+
+@media screen and (min-width: 601px) {
+  #about-banner {
+    padding-top: 9rem;
+  }
 }
 
 #about-banner h2,
