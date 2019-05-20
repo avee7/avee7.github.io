@@ -495,6 +495,11 @@ ul.list-items>li {
   font-size: 1rem;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Common styles end  */
 
 
@@ -1163,17 +1168,15 @@ footer.page-footer {
 
 .process-diagram .name {
   padding: 2rem;
-background: #4A5560;
-position: relative;
-border: solid 10px #4A5560;
-font-family: 'Permanent Marker', cursive;
-font-size: 1.5rem;
-color: #fff;
+  background: #4A5560;
+  position: relative;
+  border: solid 10px #4A5560;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
-
 .process-diagram .name:after {
-  content: '';
   border-left: solid 2rem #4A5560;
   border-right: solid 2rem transparent;
   border-top: solid 3rem transparent;
@@ -1187,8 +1190,23 @@ color: #fff;
   margin-top: auto;
 }
 
-.process-diagram .name.second:after {
-  right: -92px;
+@media screen and (min-width: 450px) {
+  .process-diagram .name:after {
+    content: '';
+  }
+
+  .process-diagram .name.second:after {
+    right: -92px;
+  }
+
+  .process-diagram .name.first:after,
+  .process-diagram .name.third:after  {
+    border-left-color: #212121;
+  }
+
+  .process-diagram .name.last:after {
+    display: none;
+  }
 }
 
 .process-diagram .name.first,
@@ -1196,14 +1214,8 @@ color: #fff;
   background: #212121;
 
 }
-.process-diagram .name.first:after,
-.process-diagram .name.third:after  {
-  border-left-color: #212121;
-}
 
-.process-diagram .name.last:after {
-  display: none;
-}
+
 
 .process-diagram .activities {
   padding: 1rem 1rem 0.5rem 1rem;
