@@ -962,11 +962,6 @@ ul.list-items>li {
   max-width: 80%;
 }
 
-/* .big-wheel-image, .zoom-prototype-video {
-  margin: 0 auto;
-  display: block;
-} */
-
 .zoom-prototype-video {
   max-width: 600px;
 }
@@ -1261,3 +1256,11 @@ footer.page-footer {
 .fas.fa-external-link-alt {
   display: none;
 }
+
+
+/* Home page redesign styles start */
+.home-page-redesign .section-heading {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+/* Home page redesign styles end */
