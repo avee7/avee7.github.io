@@ -261,6 +261,12 @@ a.btn:hover {
 /* Header styles */
 #logo-container {
   padding: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+#logo-container img {
+  margin-right: 0.5rem;
 }
 
 nav {
