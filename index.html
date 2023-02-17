@@ -12,21 +12,27 @@
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
   <link href='css/materialize.css' type='text/css' rel='stylesheet' media='screen,projection'/>
   <link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css' />
 </head>
 <body>
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
 
   <nav role='navigation'>
-    <div class='nav-wrapper container-fluid'>
+    <div class='nav-wrapper container'>
       <a id='logo-container' href='index.html' class='brand-logo-container'>
         Avinash Kaur
       </a>
       <ul class='right hide-on-small-and-down'>
         <li class='active'><a href='#' class='waves-effect'>Portfolio</a></li>
         <li><a href='about-me.html' class='waves-effect'>About</a></li>
-        <li><a href='contact.html' class='waves-effect'>Contact</a></li>
+        <li><a href='resume.html' class='waves-effect'>Resume</a></li>
       </ul>
       <a href='#' data-activates='nav-mobile' class='button-collapse'><i class='material-icons'>menu</i></a>
     </div>
@@ -35,51 +41,64 @@
   <ul id='nav-mobile' class='side-nav'>
     <li><a href='index.html' class='waves-effect'>Portfolio</a></li>
     <li><a href='about-me.html' class='waves-effect'>About</a></li>
-    <li><a href='contact.html'>Contact</a></li>
+    <li><a href='resume.html'>Resume</a></li>
   </ul>
 
   <div id='index-banner'>
     <div class='container'>
-      <div class='intro-container'>
-        <div class='row mtb-0'>
-          <div class='col s12'>
-            <h1 class='no-margin section-heading'>Hello! I'm Avi</h1>
-          </div>
+      <div class='intro-container row'>
+        
+        <div class='col s12 m8'>
+          <h1>&#128075;&#127996; Hello! I'm Avi</h1>
         </div>
-        <div class='row'>
-          <div class='col s12'>
-            <h6 class='strap-line'>Product designer based in London</h6>
+       
+        
+          <div class='col s12 m8'>
+            <p class="introduction">Product designer based in London, with 5+ years of experience in designing delightful user experiences.</p>
+            <!-- <p>Passionate about building intuitive user interfaces that are scalable and consistent. </p> -->
           </div>
-        </div>
-        <div class='row mt-3 button-container'>
-          <div class='col s12 m6 center-align'>
-            <a class='btn secondary waves-effect waves-light' href='docs/Avinash-Kaur-online-CV.pdf' download>
-              Download my CV
+          <div class='col s12 m8 button-container pt-2'>
+            <a class='btn secondary waves-effect waves-light' href='docs/Avinash-Kaur-online-resume.pdf' download>
+              Download resume
             </a>
-          </div>
-          <div class='col s12 m6 center-align'>
             <a class='btn waves-effect waves-light' id='view_work'>
               View my work
             </a>
           </div>
-        </div>
+        
 
       </div>
     </div>
   </div>
 
   <div class='container portfolio-list pt-3 pb-6' id='recent_work'>
-    <div class='row'>
-      <div class='col s12 m6'>
-        <h2 class='section-heading'>Recent work</h2>
+       <div class='row'>
+      <div class='col s12 m10'>
+        <h2 class='mtb-0'>Recent work</h2>
       </div>
-    </div>
-
-    <div class='row'>
-      <div class='col s12 m8 '>
+      <div class='col s12 m10 pt-3'>
         <div class='card row'>
-          <div class='card-image project-one-image col s12 m6 l4'></div>
-          <div class='card-stacked col s12 m6 l8'>
+          <div class='card-image project-mendeley col s12 m6'></div>
+          <div class='card-stacked col s12 m6'>
+            <div class='card-content'>
+              <span class='card-title'>
+                Mendeley.com Home page Redesign
+              </span>
+              <p class='desc'>Communicates how Mendeley can help researchers to carry out their research in a simplified way.</p>
+              <div class='roles'>
+                <span class='new badge first' data-badge-caption=''>End-to-end design process</span>
+              </div>
+            </div>
+            <div class='card-action'>
+              <a href='portfolio/home-page-redesign.html' class="btn secondary waves-effect waves-light">Read more ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='col s12 m10'>
+        <div class='card row'>
+          <div class='card-image project-one-image col s12 m6'></div>
+          <div class='card-stacked col s12 m6'>
             <div class='card-content'>
               <span class='card-title'>
                 Isoshealth
@@ -92,36 +111,15 @@
               </div>
             </div>
             <div class='card-action'>
-              <a href='portfolio/isoshealth.html'>Read more ></a>
+              <a href='portfolio/isoshealth.html' class="btn secondary waves-effect waves-light">Read more ></a>
             </div>
           </div>
         </div>
       </div>
-      <div class='col s12 m8 right'>
+      <div class='col s12 m10'>
         <div class='card row'>
-          <div class='card-image project-three-image col s12 m6 l4'></div>
-          <div class='card-stacked col s12 m6 l8'>
-            <div class='card-content'>
-              <span class='card-title'>
-                Airline Neutral
-              </span>
-              <p class='desc'>Mobile app of world's one of the leading airlines and it's newly acquired airlines.</p>
-              <div class='roles'>
-                <span class='new badge first' data-badge-caption=''>UI design</span>
-                <span class='new badge' data-badge-caption=''>Strategy and Planning</span>
-                <span class='new badge' data-badge-caption=''>UI Development</span>
-              </div>
-            </div>
-            <div class='card-action'>
-              <a href='portfolio/airline-neutral.html'>Read more ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class='col s12 m8'>
-        <div class='card row'>
-          <div class='card-image project-two-image col s12 m6 l4'></div>
-          <div class='card-stacked col s12 m6 l8'>
+          <div class='card-image project-two-image col s12 m6'></div>
+          <div class='card-stacked col s12 m6'>
             <div class='card-content'>
               <span class='card-title'>
                 Navio
@@ -137,17 +135,39 @@
               </div>
             </div>
             <div class='card-action'>
-              <a href='portfolio/navio.html'>Read more ></a>
+              <a href='portfolio/navio.html' class="btn secondary waves-effect waves-light">Read more ></a>
             </div>
           </div>
         </div>
-      </div>      
-      <div class='col s12 m8 right'>
+      </div>
+      <div class='col s12 m10'>
+        <div class='card row'>
+          <div class='card-image project-three-image col s12 m6'></div>
+          <div class='card-stacked col s12 m6'>
+            <div class='card-content'>
+              <span class='card-title'>
+                Airline Neutral
+              </span>
+              <p class='desc'>Mobile app of world's one of the leading airlines and it's newly acquired airlines.</p>
+              <div class='roles'>
+                <span class='new badge first' data-badge-caption=''>UI design</span>
+                <span class='new badge' data-badge-caption=''>Strategy and Planning</span>
+                <span class='new badge' data-badge-caption=''>UI Development</span>
+              </div>
+            </div>
+            <div class='card-action'>
+              <a href='portfolio/airline-neutral.html' class="btn secondary waves-effect waves-light">Read more ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+      <div class='col s12 m10'>
         <div class='card row landing-page-yomu'>
-          <div class='card-image col s12 m6 l4'>
+          <div class='card-image col s12 m6'>
             <img src="../images/yomu-project.png" alt="" width="500">
           </div>
-          <div class='card-stacked col s12 m6 l8'>
+          <div class='card-stacked col s12 m6'>
             <div class='card-content'>
               <span class='card-title'>
                 Yomu
@@ -162,7 +182,7 @@
               </div>
             </div>
             <div class='card-action'>
-              <a href='portfolio/yomu.html'>Read more ></a>
+              <a href='portfolio/yomu.html' class="btn secondary waves-effect waves-light">Read more ></a>
             </div>
           </div>
         </div>
@@ -175,7 +195,7 @@
   <footer class='page-footer'>
     <div class='container'>
       <div class='row'>
-        <div class='col m6 s12 contact-links'>
+        <div class='col m6 s12 resume-links'>
           <ul class='left'>
             <li>
               <a href='mailto:kauravee101@gmail.com'>
@@ -194,7 +214,7 @@
           <ul ckass='right'>
             <li><a href='index.html'>Portfolio</a></li>
             <li><a href='about-me.html'>About</a></li>
-            <li><a href='contact.html'>Contact</a></li>
+            <li><a href='resume.html'>Resume</a></li>
           </ul>
         </div>
       </div>
@@ -202,7 +222,7 @@
     <div class='footer-copyright'>
       <div class='container'>
         <span class=''>
-          &copy; 2019 Designed and Developed by Avinash Kaur
+          &copy; 2023 Designed and Developed by Avinash Kaur
         </span>
       </div>
     </div>
@@ -214,15 +234,14 @@
   <script src='js/init.js'></script>
   <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
   <script>
-  $(document).ready(function() {
-    AOS.init();
-    $('#view_work').click(function() {
-      $('html,body').animate({
-          scrollTop: $('.portfolio-list').offset().top },
-          1000);
+    $(document).ready(function() {
+      AOS.init();
+      $('#view_work').click(function() {
+        $('html,body').animate({
+            scrollTop: $('.portfolio-list').offset().top },
+            1000);
+      });
     });
-  });
   </script>
-
   </body>
 </html>
