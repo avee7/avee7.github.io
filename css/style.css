@@ -256,6 +256,10 @@ a.btn:hover {
   text-align: right;
 }
 
+.align-center {
+  text-align: center;
+}
+
 /* Helper Class styles end */
 
 /* Header styles */
@@ -452,7 +456,7 @@ ul.list-items>li {
 
 .img-text {
   font-size: 0.85rem;
-  color: #979797;
+  color: #505050;
 }
 
 .help-text {
@@ -759,9 +763,13 @@ ul.list-items>li {
 
 .portfolio-list .project-mendeley {
   background-image: url(../images/mendeley-new-homepage.png);
-  background-position: top, left;;
+  background-position: top, left;
 }
 
+.portfolio-list .project-design-systems {
+  background-image: url(../images/components1.png);
+  background-position: center;
+}
 
 .portfolio-list .project-one-image {
   background-image: url(../images/project-image1.png);
