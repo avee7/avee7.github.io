@@ -297,8 +297,9 @@ nav .brand-logo-container {
   color: #222;
 }
 
-nav ul a {
+nav ul li a.waves-effect {
   font-size: 1.125rem;
+  display: block;
 }
 
 nav .brand-logo-container {
