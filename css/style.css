@@ -273,12 +273,13 @@ a.btn:hover {
   margin-right: 0.5rem;
 }
 
+
 nav {
   box-shadow: none;
-  background-color: transparent;
+  background-color: #fefefd;
   /* position: absolute; */
   /* top: 0; */
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 nav ul a,
