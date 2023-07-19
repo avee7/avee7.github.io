@@ -470,7 +470,7 @@ ul.list-items>li {
 .sub-text {
   font-size: 1rem;
   color: #212121;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .parallax-container {
@@ -952,6 +952,7 @@ ul.list-items>li {
 
 .my-journey dl {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .my-journey dl:before {
@@ -972,7 +973,7 @@ ul.list-items>li {
   position: absolute;
   left: 7px;
   top: 22px;
-  height: 110%;
+  height: 109%;
 }
 
 .my-journey dt,
@@ -980,14 +981,22 @@ ul.list-items>li {
   margin-left: 2rem;
 }
 
+.my-journey dd ul {
+  margin-top: 0;
+}
+
+.my-journey dd li {
+  list-style-type: disc;
+}
+
 .my-journey dl:first-of-type dt:before {
   content: '';
   border: solid 1px #d8d8d8;
   display: block;
   position: absolute;
-  left: -11px;
+  left: -13px;
   top: -29px;
-  height: 42px;
+  height: 44px;
   transform: rotate(-45deg);
 }
 
@@ -1030,6 +1039,7 @@ ul.list-items>li {
 
 .my-journey .organisation {
   padding-right: 2rem;
+  margin-top: 0;
 }
 
 @media only screen and (max-width : 600px) {
