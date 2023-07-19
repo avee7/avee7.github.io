@@ -946,7 +946,8 @@ ul.list-items>li {
   color: #ebebeb;
 }
 
-.list-items.about>li {
+.row.about li,
+.row.about p {
   font-size: 1.125rem;
 }
 
