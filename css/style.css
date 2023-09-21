@@ -772,6 +772,11 @@ ul.list-items>li {
   background-position: center;
 }
 
+.portfolio-list .project-pattern-library {
+  background-image: url(../images/isoshealth-pattern-library-preview.jpg);
+  background-position: left;
+}
+
 .portfolio-list .project-one-image {
   background-image: url(../images/project-image1.png);
 }
